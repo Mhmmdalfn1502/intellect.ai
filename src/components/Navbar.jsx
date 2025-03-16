@@ -65,7 +65,7 @@ function Navbar() {
               <Link to="/" className={getLinkClass("/")} onClick={() => setIsOpen(false)}>Home</Link>
             </li>
             <li>
-              <Link to="/reference" className={getLinkClass("/reference")} onClick={() => setIsOpen(false)}>Reference</Link>
+              <Link to="/reference" className={getLinkClass("/reference")} onClick={() => setIsOpen(false)}>Referency</Link>
             </li>
             <li>
               <Link to="/course" className={getLinkClass("/course")} onClick={() => setIsOpen(false)}>Course</Link>
