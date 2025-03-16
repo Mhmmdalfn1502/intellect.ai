@@ -38,7 +38,7 @@ export default function ReferenceList() {
           >
             {courselist.map((course) => (
               <SwiperSlide key={course.id}>
-                <a href="" className="flex flex-col hover:border-2 hover:border-[#4A3AFF] justify-between gap-4 bg-white/80 p-4 rounded-4xl w-[210px] h-[330px] backdrop-blur-md drop-shadow-2xl shadow-[#4A3AFF]">
+                <a href="/" className="flex flex-col hover:border-2 hover:border-[#4A3AFF] justify-between gap-4 bg-white/80 p-4 rounded-4xl w-[210px] h-[330px] backdrop-blur-md drop-shadow-2xl shadow-[#4A3AFF]">
                   <div className="flex flex-col gap-2">
                     <div className="relative flex bg-gradient-to-br from-green-100 to-blue-200 rounded-2xl">
                       <img src={course.image} alt={course.title} className="object-contain p-2 w-[200px] h-[150px]" />

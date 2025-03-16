@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function About() {
   const teamMembers = [
@@ -19,9 +19,7 @@ export default function About() {
       {/* Hero Section */}
       <section data-aos="fade-up" className="relative flex flex-col items-center justify-center text-center pt-30 pb-20 px-6 text-white">
         <h1 className="text-4xl font-bold text-[#3D3155]">Tentang Kami</h1>
-        <p className="mt-4 max-w-2xl text-[#8B80A3]">
-          Kami adalah tim kreatif yang berfokus pada desain logo, branding, dan pengembangan digital untuk meningkatkan identitas bisnis Anda.
-        </p>
+        <p className="mt-4 max-w-2xl text-[#8B80A3]">Kami adalah tim kreatif yang berfokus pada desain logo, branding, dan pengembangan digital untuk meningkatkan identitas bisnis Anda.</p>
       </section>
 
       {/* Tentang Kami */}
