@@ -46,7 +46,7 @@ export default function About() {
             <div key={index} data-aos="fade-up" className="flex flex-col items-center p-6 rounded-lg">
               <img src={member.image} alt={member.name} className="w-60 h-60 object-contain mb-4" />
               <h3 className="text-lg font-bold text-[#3D3155]">{member.name}</h3>
-              <p className="text-sm text-gray-500">{member.role}</p>
+              <p className="text-sm text-gray-500 text-center">{member.role}</p>
             </div>
           ))}
         </div>
