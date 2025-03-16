@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 
 export default function About() {
   const teamMembers = [
-    { name: "Muhammad Alfan", role: "UX Researcher, UI Designer, Front-end Developer", image: "alfan1.png" },
-    { name: "Angelive Hilsunny", role: "UX Researcher, UI Designer, UX Writer", image: "angle1.png" },
+    { name: "Muhammad Alfan", role: "UX Researcher, UI Designer, Front-end Developer", image: "alfan1.png", linked: "https://www.linkedin.com/in/muhammad-alfan-5a85b728a/" },
+    { name: "Angelive Hilsunny", role: "UX Researcher, UI Designer, UX Writer", image: "angle1.png", linked: "https://www.linkedin.com/in/angelivehilsunny/" },
   ];
 
   return (
@@ -45,6 +45,9 @@ export default function About() {
               <img src={member.image} alt={member.name} className="w-60 h-60 object-contain mb-4" />
               <h3 className="text-lg font-bold text-[#3D3155]">{member.name}</h3>
               <p className="text-sm text-gray-500 text-center">{member.role}</p>
+              <a href={member.linked} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-500 hover:underline">
+                LinkedIn
+              </a>
             </div>
           ))}
         </div>
