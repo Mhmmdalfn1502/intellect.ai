@@ -12,7 +12,7 @@ const courses = [
 ];
 
 const CourseCard = ({ image, title, desc }) => (
-  <a href="" className="flex flex-col hover:border-2 hover:border-[#4A3AFF] justify-between gap-4 bg-white/80 p-4 rounded-4xl w-[220px] h-[350px] backdrop-blur-md drop-shadow-2xl shadow-[#4A3AFF]">
+  <a href="" className="flex flex-col hover:border-2 hover:border-[#4A3AFF] justify-between gap-4 bg-white/80 p-4 rounded-4xl w-[210px] h-[330px] backdrop-blur-md drop-shadow-2xl shadow-[#4A3AFF]">
     <div className="flex flex-col gap-2">
       <div className="relative flex bg-gradient-to-br from-green-100 to-blue-200 rounded-2xl">
         <img src={image} alt={title} className="object-contain p-2 w-[200px] h-[150px]" />
@@ -21,8 +21,8 @@ const CourseCard = ({ image, title, desc }) => (
         </div>
       </div>
       <div className="flex flex-col gap-2 w-full">
-        <p className="font-bold text-[18px] text-[#3D3155]">{title}</p>
-        <p className="truncate text-wrap font-medium text-[14px] text-[#8B80A3]">{desc}</p>
+        <p className="font-bold text-[16px] text-[#3D3155]">{title}</p>
+        <p className="truncate text-wrap font-medium text-[12px] text-[#8B80A3]">{desc}</p>
       </div>
     </div>
     <button className="flex flex-row w-[110px] rounded-3xl bg-transparent border-2 border-[#4A3AFF] text-[12px] font-bold px-3 py-1 gap-2 text-[#4A3AFF]">
@@ -37,7 +37,6 @@ export default function CourseList() {
     <div className="relative flex flex-col w-screen px-2">
       <div className="scroll-container w-full overflow-x-auto">
         <div className="scroll-content flex flex-row gap-8 py-6 w-max">
-
           <div className="flex flex-row gap-6">
             {courses.map((course) => (
               <CourseCard key={course.id} {...course} />
@@ -64,7 +63,7 @@ export default function CourseList() {
 
       <div className="scroll-container w-full">
         <div className="scroll-content flex flex-row gap-8 py-6">
-        <div className="flex flex-row gap-6">
+          <div className="flex flex-row gap-6">
             {courses.map((course) => (
               <CourseCard key={course.id} {...course} />
             ))}
@@ -86,13 +85,10 @@ export default function CourseList() {
               <CourseCard key={course.id} {...course} />
             ))}
           </div>
-
         </div>
       </div>
-      <div className="absolute left-0 w-[50px] lg:w-[100px] h-screen bg-gradient-to-r from-white to-white/0">
-      </div>
-      <div className="absolute right-0 w-[50px] lg:w-[100px] h-screen bg-gradient-to-l from-white to-white/0">
-      </div>
+      <div className="absolute left-0 w-[50px] lg:w-[100px] h-screen bg-gradient-to-r from-white to-white/0"></div>
+      <div className="absolute right-0 w-[50px] lg:w-[100px] h-screen bg-gradient-to-l from-white to-white/0"></div>
     </div>
   );
 }

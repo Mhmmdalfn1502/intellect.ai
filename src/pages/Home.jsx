@@ -4,7 +4,7 @@ import CtaGenerate from "../sections/Home/CtaGenerate";
 import TimelineSection from "../sections/Home/TimelineSection";
 import CourseList from "../sections/Home/CourseList";
 import TimelineSection2 from "../sections/Home/TimelineSection2";
-import Footer from "../sections/Home/Footer";
+import Footer from "../components/Footer";
 import ReferenceList from "../sections/Home/ReferenceList";
 
 export default function Home() {

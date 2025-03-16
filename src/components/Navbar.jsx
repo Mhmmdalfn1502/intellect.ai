@@ -28,7 +28,7 @@ function Navbar() {
             <Link to="/" className={`px-4 py-2 ${getLinkClass("/")}`}>Home</Link>
           </li>
           <li>
-            <Link to="/reference" className={getLinkClass("/reference")}>Reference</Link>
+            <Link to="/reference" className={getLinkClass("/reference")}>Referency</Link>
           </li>
           <li>
             <Link to="/course" className={getLinkClass("/course")}>Course</Link>
@@ -39,7 +39,7 @@ function Navbar() {
         </ul>
 
         {/* Desktop Sign In / Sign Up */}
-        <ul className="hidden md:flex text-[14px] justify-between w-[186px] bg-[#E3E3F8] px-[7px] py-[12px] rounded-3xl">
+        <ul  l className="hidden md:flex text-[14px] justify-between w-[186px] bg-[#E3E3F8] px-[7px] py-[12px] rounded-3xl">
           <li>
             <Link to="/signin" className="text-white font-bold bg-[#4A3AFF] hover:bg-[#3A2AFF] py-[10px] px-[18px] rounded-3xl">Sign In</Link>
           </li>

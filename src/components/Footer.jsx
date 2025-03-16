@@ -4,8 +4,9 @@ import { IoSend } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    <div className="w-full border-t border-[#3D3155]/20 py-6 px-4 lg:px-26 lg:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+    <div className="relative w-full border-t border-[#3D3155]/20 py-6 px-4 lg:px-26 lg:py-16 bg-white">
+      {/* <img src="BG.png" alt="" className="absolute inset-0 w-full h-full object-cover z-0" /> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 z-50">
         {/* Logo & Social Media */}
         <div className="flex flex-col gap-6 items-center lg:items-start">
           <img src="LOGO.png" alt="Logo" className="w-36" />
