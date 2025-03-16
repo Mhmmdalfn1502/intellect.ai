@@ -45,9 +45,12 @@ export default function About() {
               <img src={member.image} alt={member.name} className="w-60 h-60 object-contain mb-4" />
               <h3 className="text-lg font-bold text-[#3D3155]">{member.name}</h3>
               <p className="text-sm text-gray-500 text-center">{member.role}</p>
+              <div className="flex flex-row justify-center items-center gap-1 mt-1">
+                <img src="linkedin.png" alt="" className="w-5 h-5" />
               <a href={member.linked} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-500 hover:underline">
                 LinkedIn
               </a>
+              </div>
             </div>
           ))}
         </div>
