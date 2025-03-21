@@ -5,6 +5,8 @@ import Reference from "./pages/Reference";
 import About from "./pages/About";
 import Course from "./pages/Course";
 import Home from "./pages/Home";
+import Generate from "./pages/Generate";
+import Result from "./pages/Result";
 import Signin from "./pages/Auth/Signin";
 import Signup from "./pages/Auth/Signup";
 import 'animate.css';
@@ -27,6 +29,8 @@ function App() {
         <Route path="/reference" element={<Reference />} />
         <Route path="/course" element={<Course />} />
         <Route path="/about" element={<About />} />
+        <Route path="/generate" element={<Generate />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
     </Router>
   );

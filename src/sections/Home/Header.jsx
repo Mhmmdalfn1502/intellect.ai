@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { CiPlay1 } from "react-icons/ci";
 import Navbar from "../../components/Navbar";
 import { FaCheck } from "react-icons/fa6";
@@ -21,9 +22,9 @@ export default function Header() {
               <p className="text-[18px] text-center lg:text-left font-medium text-[#8B80A3] w-full px-6 lg:px-0 lg:w-[55%] leading-8">Dive into our innovative logo design analysis tool and discover the secrets behind every logo's magic</p>
             </div>
             <div className="flex justify-center lg:justify-start items-center gap-2 lg:gap-6 font-medium">
-              <div>
+              <Link to="/generate">
                 <span className="text-[12px] lg:text-[14px] px-[14px] lg:px-[18px] py-[14px] lg:py-[18px] bg-[#4A3AFF] text-white rounded-4xl">Try it now!</span>
-              </div>
+              </Link>
               <div className="flex flex-row items-center gap-2 px-[16px] lg:px-[20px] py-[9px] lg:py-[14px] border-2 border-[#4A3AFF] rounded-4xl">
                 <CiPlay1 size={20} color="#4A3AFF" />
                 <span className="text-[#4A3AFF] text-[14px]">Watch how it works</span>
